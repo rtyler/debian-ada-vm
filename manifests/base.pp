@@ -4,6 +4,13 @@
 
 
 node default {
+    stage { pre: before => Stage[main] }
+
+    class {
+        apt :
+            stage   => pre;
+    }
+
     package {
         # Compiler
         "ada-compiler"      :
@@ -64,4 +71,7 @@ node default {
         "cgdb"              :
             ensure  => installed;
     }
+
+    # include our custom sources.list file
+    include apt
 }
