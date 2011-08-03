@@ -40,6 +40,8 @@ node default {
             ensure  => installed;
         "libxmlada3.2-dev"  :
             ensure  => installed;
+        "libxmlada3.2-dbg"  :
+            ensure  => installed;
         "libxmlada-doc"     :
             ensure  => installed;
 
@@ -48,9 +50,18 @@ node default {
         "libadasockets3-dev":
             ensure  => installed;
 
+        "liblog4ada-dbg"    :
+            ensure  => installed;
         "liblog4ada0"       :
             ensure  => installed;
         "liblog4ada1-dev"   :
+            ensure  => installed;
+
+        "libflorist2009"    :
+            ensure  => installed;
+        "libflorist2009-dev":
+            ensure  => installed;
+        "libflorist-dbg"    :
             ensure  => installed;
 
 
@@ -62,6 +73,8 @@ node default {
         "libaws2.7"         :
             ensure  => installed;
         "libaws2.7-dev"     :
+            ensure  => installed;
+        "libaws-dbg"        :
             ensure  => installed;
 
 
