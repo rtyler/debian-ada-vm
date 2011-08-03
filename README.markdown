@@ -21,7 +21,7 @@ bring up a virtual machine and provision it:
     % vagrant up
 
 For development, you can just create your manifests and include them in
-`manifests/vagrant.pp`, once you're ready to re-run the puppet manifests you
+`manifests/base.pp`, once you're ready to re-run the puppet manifests you
 can run the following command (no need to rebuild the VM):
 
     % vagrant provision
