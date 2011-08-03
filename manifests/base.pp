@@ -70,6 +70,8 @@ node default {
             ensure  => installed;
         "cgdb"              :
             ensure  => installed;
+        "git-all"           :
+            ensure  => installed;
     }
 
     # include our custom sources.list file
